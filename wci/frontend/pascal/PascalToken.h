@@ -29,7 +29,7 @@ enum class PascalTokenType
     AND, ARRAY, BEGIN, CASE, CONST, DIV, DO, DOWNTO, ELSE, END,
     FILE, FOR, FUNCTION, GOTO, IF, IN, LABEL, MOD, NIL, NOT,
     OF, OR, PACKED, PROCEDURE, PROGRAM, RECORD, REPEAT, SET,
-    THEN, TO, TYPE, UNTIL, VAR, WHILE, WITH,
+    THEN, TO, TYPE, UNTIL, VAR, WHILE, WITH, WHEN,
 
     // Special symbols.
     PLUS, MINUS, STAR, SLASH, COLON_EQUALS,
@@ -82,6 +82,7 @@ constexpr PascalTokenType PT_UNTIL = PascalTokenType::UNTIL;
 constexpr PascalTokenType PT_VAR = PascalTokenType::VAR;
 constexpr PascalTokenType PT_WHILE = PascalTokenType::WHILE;
 constexpr PascalTokenType PT_WITH = PascalTokenType::WITH;
+constexpr PascalTokenType PT_WHEN = PascalTokenType::WHEN;
 
 constexpr PascalTokenType PT_PLUS = PascalTokenType::PLUS;
 constexpr PascalTokenType PT_MINUS = PascalTokenType::MINUS;
