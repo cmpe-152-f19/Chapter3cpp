@@ -27,15 +27,16 @@ void PascalToken::initialize()
 
     vector<string> rw_strings =
     {
-        "AND", "ARRAY", "BEGIN", "CASE", "CONST", "DIV", "DO", "DOWNTO",
+       "AGAIN" "AND", "ARRAY", "BEGIN", "CASE", "CONST", "DIV", "DO", "DOWNTO",
         "ELSE", "END", "FILE", "FOR", "FUNCTION", "GOTO", "IF", "IN",
         "LABEL", "MOD", "NIL", "NOT", "OF", "OR", "PACKED", "PROCEDURE",
         "PROGRAM", "RECORD", "REPEAT", "SET", "THEN", "TO", "TYPE",
-        "UNTIL", "VAR", "WHILE", "WITH", "WHEN", "LOOP"
+        "UNTIL", "VAR", "WHILE", "WITH"
     };
 
     vector<PascalTokenType> rw_keys =
     {
+        PascalTokenType::AGAIN,
         PascalTokenType::AND,
         PascalTokenType::ARRAY,
         PascalTokenType::BEGIN,
@@ -74,9 +75,7 @@ void PascalToken::initialize()
         PascalTokenType::UNTIL,
         PascalTokenType::VAR,
         PascalTokenType::WHILE,
-        PascalTokenType::WITH,
-        PascalTokenType::WHEN,
-        PascalTokenType::LOOP
+        PascalTokenType::WITH
     };
 
     for (int i = 0; i < rw_strings.size(); i++)
