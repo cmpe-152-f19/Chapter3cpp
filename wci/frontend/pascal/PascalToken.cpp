@@ -27,7 +27,7 @@ void PascalToken::initialize()
 
     vector<string> rw_strings =
     {
-       "AGAIN" "AND", "ARRAY", "BEGIN", "CASE", "CONST", "DIV", "DO", "DOWNTO",
+       "AGAIN", "AND", "ARRAY", "BEGIN", "CASE", "CONST", "DIV", "DO", "DOWNTO",
         "ELSE", "END", "FILE", "FOR", "FUNCTION", "GOTO", "IF", "IN",
         "LABEL", "MOD", "NIL", "NOT", "OF", "OR", "PACKED", "PROCEDURE",
         "PROGRAM", "RECORD", "REPEAT", "SET", "THEN", "TO", "TYPE",

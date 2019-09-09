@@ -43,7 +43,7 @@ enum class PascalTokenType
     ERROR, END_OF_FILE,
 };
 
-constexpr PascalTokenType PT_AND = PascalTokenType::AGAIN;
+constexpr PascalTokenType PT_AGAIN = PascalTokenType::AGAIN;
 constexpr PascalTokenType PT_AND = PascalTokenType::AND;
 constexpr PascalTokenType PT_ARRAY = PascalTokenType::ARRAY;
 constexpr PascalTokenType PT_BEGIN = PascalTokenType::BEGIN;
