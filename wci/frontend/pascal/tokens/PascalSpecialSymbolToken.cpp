@@ -20,14 +20,31 @@ void PascalSpecialSymbolToken::extract() throw (string)
 {
     char current_ch = current_char();
     bool good_symbol = true;
-
     text = current_ch;
 
     switch (current_ch)
     {
+		case '=':
+		{
+            current_ch = next_char();  // consume '=';
+            if(current_ch == '=')
+            {
+                if (peek_char() == '>')
+                {
+                    text += current_ch;
+                    current_ch = next_char();  // consume '=';
+                    text += current_ch;
+                    next_char();  // consume '>'
+                }
+            }
+
+
+
+			break;
+		}
         // Single-character special symbols.
         case '+':  case '-':  case '*':  case '/':  case ',':
-        case ';':  case '\'': case '=':  case '(':  case ')':
+        case ';':  case '\'': /*case '=':*/  case '(':  case ')':
         case '[':  case ']':  case '{':  case '}':  case '^':
         {
             next_char();  // consume character
